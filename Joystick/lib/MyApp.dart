@@ -12,7 +12,13 @@ class MyApp extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
         ),
-        child: game.widget,
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onPanStart: game.onPanStart,
+          onPanUpdate: game.onPanUpdate,
+          onPanEnd: game.onPanEnd,
+          child: game.widget,
+        ),
       ),
     );
   }
