@@ -1,0 +1,4 @@
+#Sun Nov 17 05:55:22 BRST 2019
+base.0=D\:\\Users\\The Cobra\\Documents\\AndroidStudioProjects\\Joystick\\ble_control\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
