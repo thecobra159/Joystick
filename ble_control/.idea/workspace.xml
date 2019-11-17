@@ -23,6 +23,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -34,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="74" />
     <option name="y" value="129" />
     <option name="width" value="1744" />
@@ -52,6 +57,11 @@
             <path>
               <item name="ble_control" type="b2602c69:ProjectViewProjectNode" />
               <item name="ble_control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ble_control" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ble_control" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -98,12 +108,20 @@
       <option name="presentableId" value="Default" />
       <updated>1573969042417</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finish control bluetooth">
+      <created>1573977909738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573977909738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.18923241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.18923241" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -113,7 +131,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" sideWeight="0.5005417" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" x="22" y="403" width="1876" height="233" id="Run" order="1" weight="0.2524377" />
+      <window_info anchor="bottom" x="22" y="403" width="1876" height="233" id="Run" order="1" weight="0.2524377" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
@@ -121,7 +139,7 @@
       <window_info anchor="bottom" id="Terminal" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -130,6 +148,10 @@
       <window_info anchor="right" id="Flutter Outline" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish control bluetooth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish control bluetooth" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/android/gradlew.bat">
@@ -140,7 +162,7 @@
     <entry file="file://$PROJECT_DIR$/lib/main.dart" />
     <entry file="file://$PROJECT_DIR$/lib/JoyPad.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
+        <state relative-caret-position="3315">
           <caret line="195" column="9" selection-start-line="195" selection-start-column="9" selection-end-line="195" selection-end-column="9" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
