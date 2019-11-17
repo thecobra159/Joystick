@@ -1,5 +1,5 @@
-//def flutterRoot = 'Z:\\flutter'
-def flutterRoot = 'D:\\flutter'
+def flutterRoot = 'Z:\\flutter'
+//def flutterRoot = 'D:\\flutter'
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
