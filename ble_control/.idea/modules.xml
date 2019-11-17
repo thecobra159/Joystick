@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ble_control.iml" filepath="$PROJECT_DIR$/ble_control.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/ble_control_android.iml" filepath="$PROJECT_DIR$/android/ble_control_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ble_control.iml" filepath="$PROJECT_DIR$/.idea/ble_control.iml" />
     </modules>
   </component>
 </project>
