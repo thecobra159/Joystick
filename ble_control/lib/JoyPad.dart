@@ -123,8 +123,8 @@ class _JoyPadState extends State<JoyPad> {
   Widget build(BuildContext context) {
     // ignore: missing_return
     JoystickDirectionCallback onDirectionChanged(double degrees, double distance) {
-      if (degrees == 0.0) {
-        writeData("m");
+      if (degrees == 0.0 || distance < 0.3) {
+        writeData("p");
         print("Centro");
       } else if ((degrees >= 1.0 && degrees <= 50.0) || (degrees >= 1.0 && degrees >= 320.0)) {
         writeData("f");
@@ -143,7 +143,11 @@ class _JoyPadState extends State<JoyPad> {
 
     // ignore: missing_return
     PadButtonPressedCallback padButtonPressedCallback(int index, Gestures gestures) {
-      writeData("c");
+      if (index == 2 || index == 3) {
+        writeData("p");
+      } else {
+        writeData("c");
+      }
     }
 
     return Scaffold(
@@ -153,48 +157,47 @@ class _JoyPadState extends State<JoyPad> {
               title: Text(connectionText),
             ),
       body: Container(
-        child: Center(
-          child: ResponsiveRow(
-            columnsCount: 12,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: <Widget>[
-              FlexWidget(
-                child: JoystickView(
-                  onDirectionChanged: onDirectionChanged,
-                ),
-                xs: 4,
-                xsLand: 4,
-                sm: 3,
-                smLand: 3,
+          child: Center(
+        child: ResponsiveRow(
+          columnsCount: 12,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: <Widget>[
+            FlexWidget(
+              child: JoystickView(
+                onDirectionChanged: onDirectionChanged,
               ),
-              FlexWidget(
-                child: Padding(
-                  padding: EdgeInsets.only(bottom: 180),
-                  child: Image.asset(
-                    "images/xbox_logo.png",
-                    height: 150,
-                    width: 150,
-                  ),
+              xs: 4,
+              xsLand: 4,
+              sm: 3,
+              smLand: 3,
+            ),
+            FlexWidget(
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 180),
+                child: Image.asset(
+                  "images/xbox_logo.png",
+                  height: 150,
+                  width: 150,
                 ),
-                xs: 4,
-                xsLand: 4,
-                sm: 3,
-                smLand: 3,
               ),
-              FlexWidget(
-                child: PadButtonsView(
-                  buttons: this.buttons,
-                  padButtonPressedCallback: padButtonPressedCallback,
-                ),
-                xs: 4,
-                xsLand: 4,
-                sm: 3,
-                smLand: 3,
+              xs: 4,
+              xsLand: 4,
+              sm: 3,
+              smLand: 3,
+            ),
+            FlexWidget(
+              child: PadButtonsView(
+                buttons: this.buttons,
+                padButtonPressedCallback: padButtonPressedCallback,
               ),
-            ],
-          ),
-        )
-      ),
+              xs: 4,
+              xsLand: 4,
+              sm: 3,
+              smLand: 3,
+            ),
+          ],
+        ),
+      )),
     );
   }
 }

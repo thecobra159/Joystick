@@ -85,6 +85,7 @@ void loop()
     if (deviceConnected)
     {
         Serial.println("Conectado");
+        deviceConnected = false;
     }
     delay(1000);
 }
