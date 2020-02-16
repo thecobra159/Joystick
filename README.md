@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/thecobra159/Joystick/workflows/main.yml/badge.svg)](https://github.com//thecobra159/Joystick/actions)
+![](https://github.com/thecobra159/Joystick/.github/workflows/main.yml/badge.svg)
 
 # Joystick
 Joystick mobile with connection bluetooth made in Flutter
