@@ -1,0 +1,25 @@
+name: Flutter CI
+
+on: [push]
+
+env:
+  working-directory: './ble_control' 
+
+jobs:
+  build:
+    runs-on: macos
+    steps:
+    - uses: actions/checkout@v1
+    - uses: steebchen/flutter@v1.0.0
+
+    - name: install dependencies
+      run: pub get
+
+    - name: Tests
+      run: flutter test
+
+    - name: Build APK
+      run: flutter build apk --release
+
+    - name: Build iOS
+      run: flutter build ios --release
