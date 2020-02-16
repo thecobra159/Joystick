@@ -13,7 +13,7 @@ jobs:
     - uses: steebchen/flutter@v1.0.0
 
     - name: install dependencies
-      run: pub get
+      run: flutter pub get
 
     - name: Tests
       run: flutter test
