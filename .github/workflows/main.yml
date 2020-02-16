@@ -10,13 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: steebchen/flutter@v1.0.0
+    - name: Setup Flutter
+      uses: steebchen/flutter@v1.0.0
+      with:
+        flutter-version: 1.12.13
 
     - name: Install dependencies
       run: exec -l $SHELL ; flutter pub get
 
-    - name: Tests
-      run: flutter test
+#     Doesn't have any tests yet
+#     - name: Tests
+#       run: flutter test
 
     - name: Build APK
       run: flutter build apk --release
