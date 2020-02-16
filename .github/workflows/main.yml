@@ -15,8 +15,11 @@ jobs:
       with:
         flutter-version: 1.12.13
 
+    - name: Environment
+      run: sudo apt update ; exec -l $SHELL ;
+
     - name: Install dependencies
-      run: exec -l $SHELL ; flutter pub get
+      run: flutter pub get
 
 #     Doesn't have any tests yet
 #     - name: Tests
